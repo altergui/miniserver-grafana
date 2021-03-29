@@ -1,0 +1,30 @@
+global:
+  scrape_interval:     30s # Set the scrape interval. Default is every 1 minute.
+  evaluation_interval: 30s # Evaluate rules every x seconds. Default is every 1 minute.
+  # scrape_timeout is set to the global default (10s).
+
+scrape_configs:
+  - job_name: 'prometheus' # prometheus internal stats
+    scrape_interval: 5s
+    scrape_timeout: 5s
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'node' # the hardware running prometheus itself
+    static_configs:
+      - targets: ['localhost:9100']
+
+  - job_name: 'file' # other remote hosts
+    file_sd_configs:
+      - files:
+        - 'targets.yml'
+    relabel_configs: # useful labels for using in grafana
+      - source_labels: [__address__]
+        regex: '([^.]+).([^:]+):([0-9]+)?'
+        target_label: host
+        replacement: '${1}'
+
+      - source_labels: [__address__]
+        regex: '([^.]+).([^:]+):([0-9]+)?'
+        target_label: domain
+        replacement: '${2}'
