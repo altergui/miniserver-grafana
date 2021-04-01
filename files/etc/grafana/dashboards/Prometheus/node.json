@@ -54,7 +54,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "VictoriaMetrics",
       "decimals": null,
       "description": "",
       "fieldConfig": {
@@ -164,7 +164,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "VictoriaMetrics",
       "fieldConfig": {
         "defaults": {
           "custom": {}
@@ -269,7 +269,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "VictoriaMetrics",
       "fieldConfig": {
         "defaults": {
           "custom": {}
@@ -362,7 +362,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "VictoriaMetrics",
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -461,7 +461,7 @@
       {
         "allValue": null,
         "current": {},
-        "datasource": "Prometheus",
+        "datasource": "VictoriaMetrics",
         "definition": "label_values(host)",
         "hide": 0,
         "includeAll": false,

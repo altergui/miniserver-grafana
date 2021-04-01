@@ -69,7 +69,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "VictoriaMetrics",
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -209,7 +209,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "VictoriaMetrics",
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -312,7 +312,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "VictoriaMetrics",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -490,7 +490,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "VictoriaMetrics",
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -602,7 +602,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "VictoriaMetrics",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -742,7 +742,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "VictoriaMetrics",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -867,7 +867,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "VictoriaMetrics",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -1006,7 +1006,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "VictoriaMetrics",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -1102,7 +1102,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "VictoriaMetrics",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -1203,7 +1203,7 @@
       {
         "allValue": null,
         "current": {},
-        "datasource": "Prometheus",
+        "datasource": "VictoriaMetrics",
         "definition": "label_values(domain)",
         "description": null,
         "error": null,
@@ -1230,7 +1230,7 @@
       {
         "allValue": null,
         "current": {},
-        "datasource": "Prometheus",
+        "datasource": "VictoriaMetrics",
         "definition": "label_values(up{domain=~\"$domain\"},host)",
         "description": null,
         "error": null,

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-apt install --no-install-recommends prometheus prometheus-node-exporter
+apt install --no-install-recommends prometheus-node-exporter
 ( cd files/ ; cp --archive --backup=numbered ./ / )
 
 # Install Grafana OSS according to https://grafana.com/docs/grafana/latest/installation/debian/
