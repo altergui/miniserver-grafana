@@ -3,6 +3,7 @@ ARGS="-storageDataPath=/var/lib/victoria-metrics \
       -enableTCP6 \
       -selfScrapeInterval 5s \
       -promscrape.config /etc/prometheus/prometheus.yml \
+      -influxListenAddr :8189 \
       -retentionPeriod 30"
 
 # VictoriaMetrics supports the following options.
