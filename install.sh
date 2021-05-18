@@ -11,6 +11,8 @@ echo "deb https://packages.grafana.com/oss/deb stable main" > /etc/apt/sources.l
 apt update
 apt install grafana
 
+( cd files/ ; cp --archive --backup=numbered ./etc/grafana/grafana.ini /etc/grafana/grafana.ini )
+
 systemctl daemon-reload
 systemctl enable grafana-server
 systemctl start grafana-server
