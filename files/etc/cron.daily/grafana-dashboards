@@ -1,0 +1,10 @@
+#!/bin/sh
+url=https://gitlab.com/librerouter/miniserver-grafana-dashboards
+
+if [ -d "/data/conf/grafana-dashboards" ] ; then
+  cd /data/conf/grafana-dashboards
+  git pull -q
+else
+  mkdir -p /data/conf/
+  git clone "$url" /data/conf/grafana-dashboards
+fi
