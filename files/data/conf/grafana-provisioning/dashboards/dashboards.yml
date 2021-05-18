@@ -3,7 +3,7 @@ apiVersion: 1
 providers:
   - name: Default
     type: file
-    allowUiUpdates: true
+    allowUiUpdates: false
     options:
       path: /data/conf/grafana-dashboards
       # <bool> use folder names from filesystem to create folders in Grafana
