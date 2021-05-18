@@ -1,5 +1,5 @@
 # Set the command-line arguments to pass to the server.
-ARGS="-storageDataPath=/var/lib/victoria-metrics \
+ARGS="-storageDataPath=/data/victoria-metrics \
       -enableTCP6 \
       -selfScrapeInterval 5s \
       -promscrape.config /etc/prometheus/prometheus.yml \
