@@ -1,0 +1,6 @@
+apiVersion: 1
+
+datasources:
+  - name: Loki
+    type: loki
+    url: http://localhost:3100
